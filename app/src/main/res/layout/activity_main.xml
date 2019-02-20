@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal= "true"
+        android:padding="16dp"
+        android:text="Welcome to Air Info"
+        android:textColor="#000"
+        android:textSize="16dp"
+        />
+    <TextView
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/a"
+        android:layout_marginLeft="16dp"
+        android:padding="8dp"
+        android:text="Choose any of the Following :" />
+    <RadioGroup
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b"
+        android:orientation="horizontal"
+        android:padding="16dp">
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="16dp"
+            android:text="Flight Info"/>
+        <RadioButton
+            android:id="@+id/r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:padding="16dp"
+            android:text="Aircraft Info"/>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/para"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bg"
+        android:layout_marginLeft="16dp"
+        android:hint="Enter Registration Number"
+        android:padding="16dp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_marginLeft="16dp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t1"
+        android:layout_marginLeft="16dp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t2"
+        android:layout_marginLeft="16dp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/para"
+        android:layout_centerHorizontal="true"
+        android:onClick="click"
+        android:text="Search"
+        tools:ignore="OnClick" />
+</RelativeLayout>
